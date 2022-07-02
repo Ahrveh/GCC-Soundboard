@@ -5,7 +5,7 @@ Original video:
 
 
 Wiring Diagram
-![image](https://user-images.githubusercontent.com/86913268/176987827-0fdd1872-fc8e-4c97-bc69-6190d98430af.png)
+![image](https://user-images.githubusercontent.com/86913268/176987862-9a24bf7e-c8b2-41c0-9de0-3c8ddac566b7.png)
 
 products used:
 
