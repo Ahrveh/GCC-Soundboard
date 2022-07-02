@@ -109,27 +109,27 @@ void loop()
 //    else if (r1.r == 1) {
 //      sfx.playTrack ("VINE    WAV");
 //    }
-    if (r1.z == 1) {
-      sfx.playTrack ("YAYUZ   WAV");
-    }
-    else if (r1.cyAxis == 77) {
-      sfx.playTrack ("VINE    WAV");
-    }
-    else if(r1.cyAxis == 177) {
-      sfx.playTrack ("VINE    WAV");
-    }
-    else if (r1.cxAxis == 77) {
-      sfx.playTrack ("VINE    WAV");
-    }
-    else if(r1.cxAxis == 177) {
-      sfx.playTrack ("VINE    WAV");
-    }
+//    else if (r1.z == 1) {
+//      sfx.playTrack ("YAYUZ   WAV");
+//    }
+//    else if (r1.cyAxis == 77) {
+//      sfx.playTrack ("VINE    WAV");
+//    }
+//    else if(r1.cyAxis == 177) {
+//      sfx.playTrack ("VINE    WAV");
+//    }
+//    else if (r1.cxAxis == 77) {
+//      sfx.playTrack ("VINE    WAV");
+//    }
+//    else if(r1.cxAxis == 177) {
+//      sfx.playTrack ("VINE    WAV");
+//    }
 //    else if(r1.start == 1) {
 //      sfx.playTrack ("MIKEHAZEWAV");
 //    }
-      else if (r1.ddown == 1) {
-        sfx.playTrack ("MIKEHAZEWAV");
-      }
+//      else if (r1.ddown == 1) {
+//        sfx.playTrack ("MIKEHAZEWAV");
+//      }
 
     
 
