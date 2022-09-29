@@ -1,4 +1,3 @@
-
 #include <SoftwareSerial.h>
 #include "Adafruit_Soundboard.h"
 
@@ -43,11 +42,18 @@ void setup()
 
   ss.begin(9600);
 
+  //Delay to wait for the controller to start polling
+  delay(1000);
 }
 
 
 void loop()
 {
+    //Stall code till falling edge, then take over line
+    pinMode(7, INPUT);
+    while(digitalRead(7));
+    delayMicroseconds(500);
+
     //Just stops the code if no controller is found
     if (!GamecubeController1.read()) {
       delay(100);
@@ -91,9 +97,9 @@ void loop()
     d.report.right = r1.right;
     
     //plays the sound effect (uncomment to add a button)
-//    if (r1.a == 1) {
-//      sfx.playTrack ("VINE    WAV");
-//    }
+    if (r1.a == 1) {
+      sfx.playTrack ("VINE    WAV");
+    }
 //    else if (r1.b == 1) {
 //      sfx.playTrack ("VINE    WAV");
 //    }
@@ -110,34 +116,27 @@ void loop()
 //      sfx.playTrack ("VINE    WAV");
 //    }
 //    else if (r1.z == 1) {
-//      sfx.playTrack ("YAYUZ   WAV");
-//    }
-//    else if (r1.cyAxis == 77) {
 //      sfx.playTrack ("VINE    WAV");
 //    }
-//    else if(r1.cyAxis == 177) {
+//    else if (r1.cyAxis =< 77) {
 //      sfx.playTrack ("VINE    WAV");
 //    }
-//    else if (r1.cxAxis == 77) {
+//    else if(r1.cyAxis >= 177) {
 //      sfx.playTrack ("VINE    WAV");
 //    }
-//    else if(r1.cxAxis == 177) {
+//    else if (r1.cxAxis =< 77) {
+//      sfx.playTrack ("VINE    WAV");
+//    }
+//    else if(r1.cxAxis >= 177) {
 //      sfx.playTrack ("VINE    WAV");
 //    }
 //    else if(r1.start == 1) {
-//      sfx.playTrack ("MIKEHAZEWAV");
+//      sfx.playTrack ("VINE    WAV");
 //    }
-//      else if (r1.ddown == 1) {
-//        sfx.playTrack ("MIKEHAZEWAV");
-//      }
+//    else if (r1.ddown == 1) {
+//        sfx.playTrack ("VINE    WAV");
+//    }
 
     
 
-    // Enable rumble
-    if (d.status.rumble) {
-      GamecubeController1.setRumble(true);
-    }
-    else {
-      GamecubeController1.setRumble(false);
-    }
-  }
+   
