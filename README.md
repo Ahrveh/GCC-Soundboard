@@ -1,7 +1,7 @@
 # GCC-Soundboard
 Make your controller make stupid noises
 
-Original video:
+Original video:https://youtu.be/n-8uX7Kd0JA
 
 
 Wiring Diagram
