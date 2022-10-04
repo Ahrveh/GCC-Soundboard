@@ -5,8 +5,7 @@ Original video:
 
 
 Wiring Diagram
-![image](https://user-images.githubusercontent.com/86913268/176987862-9a24bf7e-c8b2-41c0-9de0-3c8ddac566b7.png)
-
+![image](https://user-images.githubusercontent.com/86913268/193719119-bab9885c-e518-4d8c-8ce0-5010b8cc230f.png)
 products used:
 
 arduino nano- https://www.amazon.com/ELEGOO-Arduino-ATmega328P-Without-Compatible/dp/B0713XK923/ref=sr_1_3?crid=O7S1KV3VDYSZ&keywords=ELEGOO+Nano+Board&qid=1656738769&s=electronics&sprefix=elegoo+nano+board%2Celectronics%2C97&sr=1-3
